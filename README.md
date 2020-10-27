@@ -2,7 +2,7 @@
 
 > metascraoer integration with Twitter
 
-## Install
+## Install (Not made available yet)
 ```bash
 $ npm install metascraper-twitter --save
 ```
