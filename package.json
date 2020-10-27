@@ -1,0 +1,16 @@
+{
+  "name": "metascraper-twitter",
+  "version": "1.0.0",
+  "description": "Metascraper integration with Twitter",
+  "main": "./dist/index.js",
+  "author": "Bhargav Panth (bhargavrpanth@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@metascraper/helpers": "^5.14.18",
+    "tsc": "^1.20150623.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.0"
+  }
+}
