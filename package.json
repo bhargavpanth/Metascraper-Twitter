@@ -6,11 +6,28 @@
   "author": "Bhargav Panth (bhargavrpanth@gmail.com)",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "node_modules/.bin/tsc"
+  },
   "dependencies": {
     "@metascraper/helpers": "^5.14.18",
     "tsc": "^1.20150623.0"
   },
   "devDependencies": {
-    "mocha": "^8.2.0"
+    "lint-staged": "^10.5.0",
+    "mocha": "^8.2.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
