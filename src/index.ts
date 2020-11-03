@@ -1,5 +1,8 @@
 import puppeteer from 'puppeteer'
 
+// parse HTML content for the required
+// * JSON-LD fields
+// * meta-links
 export async function ssr(url) {
   const browser = await puppeteer.launch({headless: true})
   const page = await browser.newPage()
