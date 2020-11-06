@@ -2,6 +2,7 @@
 
 class DOMParser {
     private html: string
+    private mimeType: string = 'text/html'
     constructor(html: string) {
         this.html = html
     }
