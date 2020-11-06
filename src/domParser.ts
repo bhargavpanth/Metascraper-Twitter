@@ -1,4 +1,3 @@
-/* https://developer.mozilla.org/en-US/docs/Web/API/DOMParser#Parsing_an_SVG_or_HTML_document */
 import { JSDOM } from 'jsdom'
 
 export class DOMParser {
