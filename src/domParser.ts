@@ -5,6 +5,14 @@ export class DOMParser {
     public dom: JSDOM
     constructor(html: string) {
         this.html = html
-        this.dom = new JSDOM(this.html) 
+        this.dom = new JSDOM(
+            this.html, {
+                includeNodeLocations: true
+            }
+        ) 
+    }
+
+    get DOM() {
+        return this.dom
     }
 }
