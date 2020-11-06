@@ -1,9 +1,11 @@
 /* https://developer.mozilla.org/en-US/docs/Web/API/DOMParser#Parsing_an_SVG_or_HTML_document */
+import { JSDOM } from 'jsdom'
 
-class DOMParser {
+export class ParseDOM {
     private html: string
-    private mimeType: string = 'text/html'
+    public dom: JSDOM
     constructor(html: string) {
         this.html = html
+        this.dom = new JSDOM(this.html) 
     }
 }
