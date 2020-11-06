@@ -11,4 +11,3 @@ export async function ssr(url) {
   await browser.close()
   return html
 }
-
