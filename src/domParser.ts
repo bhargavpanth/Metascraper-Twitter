@@ -15,4 +15,8 @@ export class DOMParser {
     get DOM() {
         return this.dom
     }
+
+    get author() {
+        return this.dom.window.document.getElementByClass('css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0')
+    }
 }
