@@ -1,8 +1,8 @@
 import { JSDOM } from 'jsdom'
 
-export class DOMParser {
+export class TwitterDOMParser {
     private html: string
-    public dom: JSDOM
+    private dom: JSDOM
     constructor(html: string) {
         this.html = html
         this.dom = new JSDOM(
