@@ -1,9 +1,9 @@
-import { TwitterDOMParser } from './twitterDomParser'
+import { DOMParser } from './domParser'
 
 /**
  * @params stringified html document
  * **/
-export class TwitterDOM extends TwitterDOMParser {
+export class TwitterDOM extends DOMParser {
     constructor(html: string) {
         super(html)
     }
