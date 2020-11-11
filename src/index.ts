@@ -9,6 +9,8 @@ import {
   } from '@metascraper/helpers'
 import puppeteer from 'puppeteer'
 
+const twitterRegex = ''
+
 // parse HTML content for the required
 // * JSON-LD fields
 // * meta-links
